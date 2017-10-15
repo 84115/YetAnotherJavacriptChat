@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/84115/YetAnotherJavacriptChat.git"
   },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
   "keywords": [
     "chat",
     "socket.io",
