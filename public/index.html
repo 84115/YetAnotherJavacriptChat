@@ -11,7 +11,7 @@
       <div id="chat-output"></div>
       <div id="chat-feedback"></div>
     </div>
-    <input type="chat-handle" id="chat-handle" name="chat-handle" placeholder="chat-handle"/>
+    <input type="chat-handle" id="chat-handle" name="chat-handle" placeholder="chat-handle" value="Guest" />
     <input type="chat-message" id="chat-message" name="chat-message" placeholder="chat-message"/>
     <button id="chat-send">Send</button>
   </div>
@@ -99,6 +99,13 @@
 
     message.addEventListener('keypress', function() {
       socket.emit('typing', handle.value);
+    });
+
+    socket.on('connect', function() {
+      socket.emit('chat', {
+        'message': 'a ' + handle.value + ' joined the chat.',
+        'handle': 'Server'
+      });
     });
 
     socket.on('chat', function(data) {
