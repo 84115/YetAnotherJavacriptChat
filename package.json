@@ -1,0 +1,24 @@
+{
+  "name": "yet-another-javascript-chat",
+  "version": "0.0.1",
+  "description": "Yet Another Javacript Chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/84115/YetAnotherJavacriptChat.git"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "express"
+  ],
+  "author": "James Ball",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/84115/YetAnotherJavacriptChat/issues"
+  },
+  "homepage": "https://github.com/84115/YetAnotherJavacriptChat#readme"
+}
